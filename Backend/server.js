@@ -16,7 +16,7 @@ const port=4000
 //middleware
 app.use(express.json())
 app.use(cors())
-
+    
 //db connection
 connectDb();
 
@@ -36,4 +36,3 @@ app.get("/",(req,res)=>{
 app.listen(port,()=>{
     console.log(`app is running on port ${port}`)
 })
-//mongodb+srv://anilkumarjatav188:anilkumar12@cluster0.5znzruy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
